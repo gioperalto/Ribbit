@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.oneironautgames.ribbit.LoginActivity$PlaceholderFragment" >
+    tools:context=".LoginActivity" >
 
     <EditText
         android:id="@+id/usernameField"
@@ -39,11 +39,12 @@
         android:text="@string/login_button_label" />
 
     <TextView
-        android:id="@+id/signupText"
+        android:id="@+id/signUpText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="69dp"
         android:text="@string/sign_up_text" />
 
 </RelativeLayout>
