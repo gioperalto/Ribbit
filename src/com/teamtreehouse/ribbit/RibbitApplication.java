@@ -9,6 +9,6 @@ public class RibbitApplication extends Application {
 	@Override
 	public void onCreate() { 
 		super.onCreate();
-	    Parse.initialize(this, "Application ID", "Client Key");
+	    Parse.initialize(this, "YFLfZ1hzfZ9ELmNjObxnRgwbmtHOvEe5KbHTlq5i", "4Kypk3Rm7bcvDQ6PiMV6wqMt1Uojxr857yNBQSrQ");
 	}
 }

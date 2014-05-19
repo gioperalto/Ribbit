@@ -1,5 +1,6 @@
 package com.teamtreehouse.ribbit;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -9,6 +10,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
 import com.oneironaut.ribbit.R;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
@@ -27,6 +29,9 @@ public class LoginActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 		setContentView(R.layout.activity_login);
+		
+		ActionBar actionBar = getActionBar();
+		actionBar.hide();
 		
 		mSignUpTextView = (TextView)findViewById(R.id.signUpText);
 		mSignUpTextView.setOnClickListener(new View.OnClickListener() {
