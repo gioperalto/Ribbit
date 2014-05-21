@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.FragmentTransaction;
@@ -23,7 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
-import com.oneironaut.ribbit.R;
+
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 
@@ -212,7 +213,7 @@ public class MainActivity extends FragmentActivity implements
 			// the TabListener interface, as the callback (listener) for when
 			// this tab is selected.
 			actionBar.addTab(actionBar.newTab()
-					.setText(mSectionsPagerAdapter.getPageTitle(i))
+					.setIcon(mSectionsPagerAdapter.getIcon(i))
 					.setTabListener(this));
 		}
 	}

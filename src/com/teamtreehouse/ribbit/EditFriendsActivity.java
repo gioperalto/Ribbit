@@ -1,17 +1,19 @@
 package com.teamtreehouse.ribbit;
 
 import java.util.List;
+
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.oneironaut.ribbit.R;
+
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
@@ -50,7 +52,6 @@ public class EditFriendsActivity extends ListActivity {
 		
 		ParseQuery<ParseUser> query = ParseUser.getQuery();
 		query.orderByAscending(ParseConstants.KEY_USERNAME);
-		query.whereNotEqualTo(ParseConstants.KEY_USERNAME, mCurrentUser.getUsername());
 		query.setLimit(1000);
 		query.findInBackground(new FindCallback<ParseUser>() {
 			@Override
