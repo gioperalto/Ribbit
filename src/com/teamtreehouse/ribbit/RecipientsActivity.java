@@ -2,6 +2,7 @@ package com.teamtreehouse.ribbit;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.net.Uri;
@@ -15,7 +16,7 @@ import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.oneironaut.ribbit.R;
+
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;

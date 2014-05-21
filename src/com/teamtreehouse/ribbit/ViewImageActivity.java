@@ -10,7 +10,6 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.oneironaut.ribbit.R;
 import com.squareup.picasso.Picasso;
 
 public class ViewImageActivity extends Activity {

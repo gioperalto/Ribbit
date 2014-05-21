@@ -1,5 +1,7 @@
 package com.teamtreehouse.ribbit;
 
+import java.io.ByteArrayOutputStream;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Pair;
